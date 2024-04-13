@@ -130,7 +130,8 @@
  * ===============================
  */
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Rollgates Luxury', sans-serif;
+  src: url('css/typography/Rollgates Luxury.otf') format('opentype');
   font-size: 15px;
   font-style: none;
   line-height: 25px;
