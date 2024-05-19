@@ -638,6 +638,10 @@ section.section {
   .section-header.text-right * {
     text-align: center;
   }
+  html{
+    scroll-behavior: smooth;
+
+  }
   /**
      * ================================
      * Nav Defult Style
@@ -1286,3 +1290,16 @@ h2::after {
   border-radius: 100px;
   padding: 10px 25px;
 }
+.TT{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+.fancy{
+  position: absolute;
+  top: 50%;
+
+}
+
+
