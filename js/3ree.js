@@ -119,12 +119,12 @@ function init() {
   var gparticular = new THREE.CircleGeometry(0.01, 3);
   var aparticular = 5;
   
-  for (var h = 1; h<300; h++) {
-    var particular = new THREE.Mesh(gparticular, gmaterial);
-    particular.position.set(mathRandom(aparticular), mathRandom(aparticular),mathRandom(aparticular));
-    particular.rotation.set(mathRandom(),mathRandom(),mathRandom());
-    smoke.add(particular);
-  };
+  // for (var h = 1; h<300; h++) {
+  //   var particular = new THREE.Mesh(gparticular, gmaterial);
+  //   particular.position.set(mathRandom(aparticular), mathRandom(aparticular),mathRandom(aparticular));
+  //   particular.rotation.set(mathRandom(),mathRandom(),mathRandom());
+  //   smoke.add(particular);
+  // };
   
   var pmaterial = new THREE.MeshPhongMaterial({
     color:0x000000,
@@ -242,7 +242,6 @@ var generateLines = function() {
 //----------------------------------------------------------------- CAMERA position
 
 var cameraSet = function() {
-  createCars(0.1, 20, 0x7732cf);
   //TweenMax.to(camera.position, 1, {y:1+Math.random()*4, ease:Expo.easeInOut})
 };
 
@@ -275,6 +274,6 @@ var animate = function() {
   camera.lookAt(city.position);
   renderer.render( scene, camera );  
 }
-generateLines();
+
 init();
 animate();
